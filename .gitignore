@@ -1,0 +1,99 @@
+############################
+# Build results and folders
+############################
+bin/
+obj/
+out/
+artifacts/
+TestResults/
+
+############################
+# User-specific files
+############################
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+############################
+# VS working folders
+############################
+.vs/
+.vscode/
+.idea/
+*.code-workspace
+
+############################
+# ASP.NET Core
+############################
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+appsettings.Development.json
+
+############################
+# Razor build artifacts
+############################
+**/Generated/
+**/GeneratedFiles/
+*.g.cs
+*.g.i.cs
+*.AssemblyAttributes.cs
+*.RazorTargetAssemblyInfo.cs
+
+############################
+# Logs and crash dumps
+############################
+*.log
+*.nlog
+*.serilog
+*.dmp
+
+############################
+# Other platform junk
+############################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.swp
+*.bak
+*.tmp
+
+############################
+# NuGet
+############################
+*.nupkg
+packages/
+NuGet.Config
+NuGet.exe
+
+############################
+# Dotnet CLI
+############################
+project.lock.json
+project.fragment.lock.json
+*.deps.json
+
+############################
+# Resharper / Rider
+############################
+_ReSharper*/
+*.ReSharper
+*.DotSettings.user
+
+############################
+# Publish artifacts
+############################
+*.Publish.xml
+*.pubxml
+*.publishproj
+
+############################
+# Others
+############################
+node_modules/
+*.tsbuildinfo
+.env
+.env.*
+secrets.json
