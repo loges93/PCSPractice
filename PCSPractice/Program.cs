@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using System;
+using PCSPractice.Data;
+
 namespace PCSPractice
 {
     public class Program
@@ -8,6 +12,8 @@ namespace PCSPractice
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<PcsDbContext>(options =>
+               options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 
