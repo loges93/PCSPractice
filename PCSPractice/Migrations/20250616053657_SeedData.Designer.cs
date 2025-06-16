@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PCSPractice.Data;
 
@@ -10,9 +11,11 @@ using PCSPractice.Data;
 namespace PCSPractice.Migrations
 {
     [DbContext(typeof(PcsDbContext))]
-    partial class PcsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250616053657_SeedData")]
+    partial class SeedData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
